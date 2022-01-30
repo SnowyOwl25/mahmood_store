@@ -1,0 +1,151 @@
+#spinner {
+  animation-name: spin, depth, rainbow;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-duration: 6s;
+  text-align: center;
+  color: white;
+  font-size: 500%;
+}
+#spinnerX {
+  animation-name: spinX, depth, rainbow;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-duration: 6s;
+  text-align: center;
+  color: white;
+  font-size: 500%;
+}
+#spinnerZ {
+  animation-name: spinZ, depth, rainbow;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-duration: 3s;
+  text-align: center;
+  color: white;
+  font-size: 500%;
+}
+h1 {
+    font-family: Arial;
+} 
+p {
+    font-family: Arial;
+}
+.hoverSpin:hover img{
+	animation-name: spin;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-duration: 6s;
+}
+hr{
+	animation-name: Brainbow;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-duration: 6s;
+}
+
+@keyframes spin {
+  from { transform: rotateY(0deg); }
+  to { transform: rotateY(-360deg); }
+}
+@keyframes spinX {
+  from { transform: rotateX(0deg); }
+  to { transform: rotateX(-360deg); }
+}
+@keyframes spinZ {
+	0% { transform: rotateZ(10deg); }
+	25% { transform: rotateZ(0deg); }
+	50% { transform: rotateZ(-10deg); }
+	75% { transform: rotateZ(0deg); }
+	100% { transform: rotateZ(10deg); }
+}
+@keyframes depth {
+  0% { text-shadow: 0 0 black; }
+  25% { text-shadow: 1px 0 black, 2px 0 black, 3px 0 black, 4px 0 black, 5px 0 black; }
+  50% { text-shadow: 0 0 black; }
+  75% { text-shadow: -1px 0 black, -2px 0 black, -3px 0 black, -4px 0 black, -5px 0 black; }
+  100% { text-shadow: 0 0 black; }
+}
+
+
+
+#shrink{
+	animation-name: bruh, rainbow;
+	animation-timing-function: linear;
+  	animation-iteration-count: infinite;
+  	animation-duration: 0.4s;
+	text-align: center;
+	text-shadow: 1px 1px 1px black;
+	left: 200px;
+  	font-size: 500%;
+}
+a{
+	font-family: Arial;
+	animation-name: rainbow;
+	text-shadow: 1px 1px 1px black;
+	text-decoration: none;
+	animation-timing-function: linear;
+  	animation-iteration-count: infinite;
+  	animation-duration: 6s;
+}
+a:hover{
+	animation-name: depth, rainbow;
+	text-decoration: underline;
+	animation-timing-function: linear;
+  	animation-iteration-count: infinite;
+  	animation-duration: 6s;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+li {
+  display: inline-block;
+  margin-right: 100px;
+  margin-left: 100px;
+  padding: 0;
+}
+img{
+	height: 100%;
+	/*width: 100%;*/
+	max-height:200px;
+	max-width: 80%;
+}
+table, th, td{
+	animation-name: Brainbow;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-duration: 6s;
+	border: 2px solid black;
+	background: black;
+}
+
+@keyframes bruh {
+  0% { transform: scale(80%);}
+  25% { transform: scale(85%);}
+  50% { transform: scale(100%);}
+  75% { transform: scale(85%);}
+  100% { transform: scale(80%);}
+}
+@keyframes rainbow{
+	0%{color: red;}
+	16%{color: orange;}
+	33%{color: yellow;}
+	50%{color: green;}
+	66%{color: blue;}
+	80%{color: purple;}
+	100%{color: red;}
+}
+@keyframes Brainbow{
+	0%{border-color: red;}
+	16%{border-color: orange;}
+	33%{border-color: yellow;}
+	50%{border-color: green;}
+	66%{border-color: blue;}
+	80%{border-color: purple;}
+	100%{border-color: red;}
+}
+#row1{
+	display: inline-block;
+}
