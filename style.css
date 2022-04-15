@@ -109,7 +109,7 @@ li {
 img{
 	height: 100%;
 	/*width: 100%;*/
-	max-height:200px;
+	max-height:300px;
 	max-width: 80%;
 }
 table, th, td{
@@ -148,4 +148,8 @@ table, th, td{
 }
 #row1{
 	display: inline-block;
+}
+
+th{
+	width: 30%;
 }
